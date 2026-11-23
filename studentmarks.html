@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+</head>
+<body>
+    <h1>Student Marksheet</h1>
+    
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+    <label>Roll No:</label>
+    <input type="text" id="roll"><br><br>
+
+    <label>English:</label>
+    <input type="number" id="eng"><br><br>
+
+    <label>Maths:</label>
+    <input type="number" id="maths"><br><br>
+
+     <label>Science:</label>
+    <input type="number" id="sci"><br><br>
+
+    <label>Computer:</label>
+    <input type="number" id="comp"><br><br>
+
+    <button onclick="calculate()">Generate Marksheet</button>
+
+    <h3 id="result"></h3>
+     <script>
+        function calculate() {
+
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+
+             let eng = Number(document.getElementById("eng").value);
+            let maths = Number(document.getElementById("maths").value);
+             let sci = Number(document.getElementById("sci").value);
+            let comp = Number(document.getElementById("comp").value);
+
+            let total = eng + maths + sci + comp;
+            let percentage = total / 4;
+
+        
+             if (percentage >= 90) {
+                grade = "A+";
+                result = "Pass";
+            }
+            else if (percentage>=80){
+                grade = "A";
+                result = "Pass";
+            }
+            else if (percentage>=70){
+                grade = "B";
+                result = "Pass";
+            }
+            else if (percentage>=60){
+                grade = "C";
+                result = "Pass";
+            }
+             else if (percentage >= 50) {
+                grade = "D";
+                result = "Pass";
+            }
+            else if (percentage >= 33) {
+                grade = "E";
+                result = "Pass";
+            }
+            else {
+                grade = "F";
+                result = "Fail";
+            }
+            document.getElementById("result").innerHTML =
+                
+    </script>
+
+</body>
+</html>
+
+        }
+
+
+</body>
+
+</html>

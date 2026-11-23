@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">open Window</button>
+     <button onclick="closeWindow()">close Window</button>
+     <button onclick="moveWindow()">move Window</button>
+</body>
+<script>
+    let a;
+    function openWindow(){
+        //window.open("https://www.google.com/","_parent","height:500 px","align: center","width: 500px");
+        a=window.open("https://www.google.com/"," ","height:500 px,width: 500px,left=300px");
+        a.document.write("<p>this is my new window[with moveTo and moveBy event]</p>");
+    }
+    function closeWindow(){
+        a.close();
+    }
+    function movewindow(){
+        a.moveTo(200,300);
+        a.focus();
+    }
+
+</script>
+</html>

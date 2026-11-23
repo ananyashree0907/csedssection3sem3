@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+<style>
+    #box{
+        height: 700px;
+        width: 600px;
+        background-color: aqua;
+        margin: 200px 0 0 100px;
+    }
+</style>
+<script>
+    function eventcall(){
+        alert("these are the mouseevents");
+    }
+    function section(){
+        alert("example of function 2")
+    }
+    function mouse(){
+        alert("example of function 3")
+    }
+    function callevent(){
+        alert("example of function 4")
+    }
+</script>
+</head>
+<body>
+    
+
+    <!--<div id="box" onmouseover="eventcall()">box1</div>-->
+    <!--<div id="box" onmouseout="eventcall()">box1</div>-->
+    <!--<div id="box" onmousedown="eventcall()">box1</div>-->
+    <!--<div id="box" onclick="eventcall()">box1</div>
+    <div id="box" ondblclick="eventcall()">box1</div>-->
+    <div id="box" oncontextmenu="section()">box1</div>
+    <div id="box" onmouseup="mouse()">box1</div>
+    <button onclick="section()"></button>
+
+</body>
+</html>
